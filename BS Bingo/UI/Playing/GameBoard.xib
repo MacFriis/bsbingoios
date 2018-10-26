@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GameBoardView" customModule="BS_Bingo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ni2-cb-0je">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pyQ-t3-n0V">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="133.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSL-ch-TvE" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CUf-BL-mcw">
+                                            <rect key="frame" x="8" y="9" width="78" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-JO-Fj5">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="h7n-jd-H62">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dX8-La-ROz">
+                                            <rect key="frame" x="8" y="9" width="78" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="x9S-K5-TCd"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="blind" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="dX8-La-ROz" id="3KK-iI-icE"/>
+                                        <outlet property="tappedView" destination="UFL-JO-Fj5" id="uAU-J0-86P"/>
+                                        <outlet property="wordLabel" destination="CUf-BL-mcw" id="WhI-7Y-GX8"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30p-Jz-xa0" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="94" y="0.0" width="93.5" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4yJ-vi-iUx">
+                                            <rect key="frame" x="8" y="9" width="77.5" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-6P-pOz">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="neg-Tw-S8T">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAv-Gy-Pze">
+                                            <rect key="frame" x="8" y="9" width="77.5" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="Dkh-LJ-Jp1"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="blind" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="aAv-Gy-Pze" id="PPE-ae-CUX"/>
+                                        <outlet property="tappedView" destination="lTt-6P-pOz" id="hZu-en-deC"/>
+                                        <outlet property="wordLabel" destination="4yJ-vi-iUx" id="HJR-jo-PnN"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYr-9P-dZk" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="187.5" y="0.0" width="94" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GLx-j0-a4T">
+                                            <rect key="frame" x="8" y="9" width="78" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FrL-6E-Ns1">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="PPR-rg-vQP">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FUj-kA-vI6">
+                                            <rect key="frame" x="8" y="9" width="78" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="XUd-9d-6MQ"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="blind" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="FUj-kA-vI6" id="RXP-pM-Akl"/>
+                                        <outlet property="tappedView" destination="FrL-6E-Ns1" id="hlt-dF-zGo"/>
+                                        <outlet property="wordLabel" destination="GLx-j0-a4T" id="NNc-WM-UCf"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hcq-lc-ntU" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UPg-6m-gvx">
+                                            <rect key="frame" x="8" y="9" width="77.5" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T2n-HS-TAH">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="rrY-zj-Fem">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CCg-lg-cLk">
+                                            <rect key="frame" x="8" y="9" width="77.5" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="4C0-8O-6Jt"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="blind" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="CCg-lg-cLk" id="vIo-WT-rKF"/>
+                                        <outlet property="tappedView" destination="T2n-HS-TAH" id="e4f-NT-ze1"/>
+                                        <outlet property="wordLabel" destination="UPg-6m-gvx" id="8rw-V1-kYj"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="7Sl-dQ-oDe"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ONP-DH-p5x">
+                            <rect key="frame" x="0.0" y="133.5" width="375" height="133.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8v-Gh-ePy" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="57e-Yl-nM6">
+                                            <rect key="frame" x="8" y="-11" width="78" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yak-cv-NDT">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="N91-5U-Hyd">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avo-Zl-ZQS">
+                                            <rect key="frame" x="8" y="9" width="78" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="RrT-Sf-Ycs"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="avo-Zl-ZQS" id="HkB-UP-pG2"/>
+                                        <outlet property="tappedView" destination="Yak-cv-NDT" id="72L-8C-WFi"/>
+                                        <outlet property="wordLabel" destination="57e-Yl-nM6" id="3a1-hV-NpP"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTQ-o7-Ryu" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="94" y="0.0" width="93.5" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="i0F-OY-L9u">
+                                            <rect key="frame" x="8" y="-11" width="77.5" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fxl-kL-FbU">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="qJT-EI-Df0">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lgq-vn-b1w">
+                                            <rect key="frame" x="8" y="9" width="78" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="lIj-TS-yCL"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="lgq-vn-b1w" id="uY8-0f-d6a"/>
+                                        <outlet property="tappedView" destination="fxl-kL-FbU" id="BcI-np-cp0"/>
+                                        <outlet property="wordLabel" destination="i0F-OY-L9u" id="D6t-Zf-L8e"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unt-oU-bSv" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="187.5" y="0.0" width="94" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E6l-7y-qI9">
+                                            <rect key="frame" x="8" y="-11" width="78" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1LD-X9-Tva">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="4j3-5q-X8a">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qDg-j7-drL">
+                                            <rect key="frame" x="8" y="9" width="78" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="kwm-Hb-NJE"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="qDg-j7-drL" id="7m4-v7-5bZ"/>
+                                        <outlet property="tappedView" destination="1LD-X9-Tva" id="Nab-Rm-lVK"/>
+                                        <outlet property="wordLabel" destination="E6l-7y-qI9" id="BZf-kd-pJg"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oTk-Lu-swl" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="M4L-b8-sd7">
+                                            <rect key="frame" x="8" y="-11" width="77.5" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WwM-3h-cPd">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="o84-tj-f0b">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="29c-YI-EuC">
+                                            <rect key="frame" x="8" y="9" width="78" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="QKn-8E-RWE"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="29c-YI-EuC" id="moT-lS-7Hg"/>
+                                        <outlet property="tappedView" destination="WwM-3h-cPd" id="eCU-0J-Ebn"/>
+                                        <outlet property="wordLabel" destination="M4L-b8-sd7" id="Ge8-r6-TDP"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="K5P-f6-uOi"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Iba-6g-O8u">
+                            <rect key="frame" x="0.0" y="267" width="375" height="133"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSr-0s-NSe" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="133"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0ZP-5m-aV3">
+                                            <rect key="frame" x="8" y="-11" width="78" height="136.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fz8-vR-mJM">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="nFv-Zc-aFd">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jcg-aH-F9n">
+                                            <rect key="frame" x="8" y="22" width="78" height="104"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="2AZ-i3-iKf"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="Jcg-aH-F9n" id="Ayt-g5-OvQ"/>
+                                        <outlet property="tappedView" destination="fz8-vR-mJM" id="NSr-3x-SMO"/>
+                                        <outlet property="wordLabel" destination="0ZP-5m-aV3" id="Sdw-V0-i5i"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNU-es-dMM" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="94" y="0.0" width="93.5" height="133"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ygg-BI-bc4">
+                                            <rect key="frame" x="8" y="-11" width="77.5" height="136.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cdd-dY-AMB">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Dl0-8d-XoG">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uui-kr-7cU">
+                                            <rect key="frame" x="8" y="30" width="78" height="95"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="Ne3-xB-Yci"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="uui-kr-7cU" id="lD4-jT-8dz"/>
+                                        <outlet property="tappedView" destination="Cdd-dY-AMB" id="Sll-oZ-57s"/>
+                                        <outlet property="wordLabel" destination="ygg-BI-bc4" id="5kr-DM-ezR"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zet-Xm-cJk" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="187.5" y="0.0" width="94" height="133"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BBx-lK-LGd">
+                                            <rect key="frame" x="8" y="-11" width="78" height="136.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y5p-ym-7Tp">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="eb8-oU-Urp">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ck6-56-mh1">
+                                            <rect key="frame" x="8" y="27" width="78" height="99"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="gnv-vF-JDE"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="Ck6-56-mh1" id="OWd-nj-wic"/>
+                                        <outlet property="tappedView" destination="Y5p-ym-7Tp" id="gs8-J6-ya1"/>
+                                        <outlet property="wordLabel" destination="BBx-lK-LGd" id="hRu-qz-LLn"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SW2-lk-KKr" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="133"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eZ3-YG-2lm">
+                                            <rect key="frame" x="8" y="-11" width="77.5" height="136.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1I2-jR-Woj">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="He9-dY-9c4">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzr-GI-vPm">
+                                            <rect key="frame" x="8" y="39" width="78" height="86"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="Zt0-7z-ADb"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="yzr-GI-vPm" id="cjf-3t-oHl"/>
+                                        <outlet property="tappedView" destination="1I2-jR-Woj" id="a55-sz-UMg"/>
+                                        <outlet property="wordLabel" destination="eZ3-YG-2lm" id="qkj-F6-YCC"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="DLL-6L-g8g"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vZh-V2-avs">
+                            <rect key="frame" x="0.0" y="400" width="375" height="133.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1q7-JU-Jta" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ABf-Pp-dRc">
+                                            <rect key="frame" x="8" y="-11" width="78" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mGR-PO-zUJ">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="2a2-l3-fhN">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7hw-Co-3TY">
+                                            <rect key="frame" x="8" y="8" width="78" height="118"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="N4W-Qa-9iS"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="7hw-Co-3TY" id="dNO-Jg-eg0"/>
+                                        <outlet property="tappedView" destination="mGR-PO-zUJ" id="Jp4-el-yAr"/>
+                                        <outlet property="wordLabel" destination="ABf-Pp-dRc" id="yDs-wH-OHY"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKG-9i-4iz" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="94" y="0.0" width="93.5" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="u9c-se-raF">
+                                            <rect key="frame" x="8" y="-11" width="77.5" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lhw-zQ-UAS">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="3Pa-9d-Gbn">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9CM-WM-nrA">
+                                            <rect key="frame" x="8" y="17" width="78" height="109"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="T6R-zX-FKM"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="9CM-WM-nrA" id="wrm-Jk-CCx"/>
+                                        <outlet property="tappedView" destination="lhw-zQ-UAS" id="nTP-gE-ZYd"/>
+                                        <outlet property="wordLabel" destination="u9c-se-raF" id="v0U-ga-Uuj"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3H-Mc-fGm" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="187.5" y="0.0" width="94" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IRu-vj-4zS">
+                                            <rect key="frame" x="8" y="-11" width="78" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LIo-uO-e0z">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="61e-Oi-97c">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9wy-hC-nzD">
+                                            <rect key="frame" x="8" y="17" width="78" height="109"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="6G3-qz-ANF"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="9wy-hC-nzD" id="T7I-7j-HRA"/>
+                                        <outlet property="tappedView" destination="LIo-uO-e0z" id="dva-HB-E6u"/>
+                                        <outlet property="wordLabel" destination="IRu-vj-4zS" id="iC8-T1-95R"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dng-iu-9JM" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EEo-Sz-TAf">
+                                            <rect key="frame" x="8" y="-11" width="77.5" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G3l-5m-zK9">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="qPg-rr-g3X">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2kZ-Wj-8WW">
+                                            <rect key="frame" x="8" y="9" width="78" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="yPw-jq-sxj"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="2kZ-Wj-8WW" id="9au-gK-FyS"/>
+                                        <outlet property="tappedView" destination="G3l-5m-zK9" id="0M6-eD-6TE"/>
+                                        <outlet property="wordLabel" destination="EEo-Sz-TAf" id="Jc4-9M-5qj"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="0ia-PP-hxW"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ioH-Dl-Ljd">
+                            <rect key="frame" x="0.0" y="533.5" width="375" height="133.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQa-FB-HPe" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IhP-UU-MBn">
+                                            <rect key="frame" x="8" y="-11" width="78" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcc-bV-h85">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="NXR-Pp-UFm">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q2F-kj-UrN">
+                                            <rect key="frame" x="8" y="9" width="78" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="xHC-kA-hZ2"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="q2F-kj-UrN" id="kEs-eH-0NV"/>
+                                        <outlet property="tappedView" destination="tcc-bV-h85" id="p33-dW-eTV"/>
+                                        <outlet property="wordLabel" destination="IhP-UU-MBn" id="6Ah-yc-3v8"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsU-lY-LF6" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="94" y="0.0" width="93.5" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZrX-sT-hgn">
+                                            <rect key="frame" x="8" y="-11" width="77.5" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4C8-kr-f1L">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="DJ6-4W-lHQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AlP-0j-uqH">
+                                            <rect key="frame" x="8" y="8" width="78" height="118"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="rey-zt-PFZ"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="AlP-0j-uqH" id="BCz-V8-1p1"/>
+                                        <outlet property="tappedView" destination="4C8-kr-f1L" id="m9c-Ho-5L2"/>
+                                        <outlet property="wordLabel" destination="ZrX-sT-hgn" id="tT4-Nc-aeX"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIZ-4U-UkB" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="187.5" y="0.0" width="94" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dpz-ke-T6n">
+                                            <rect key="frame" x="8" y="-11" width="78" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PfU-y5-JxL">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="W93-My-7R0">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mDV-Mj-YFn">
+                                            <rect key="frame" x="8" y="18" width="78" height="108"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="XDV-OE-FqM"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="mDV-Mj-YFn" id="I4W-dJ-7U2"/>
+                                        <outlet property="tappedView" destination="PfU-y5-JxL" id="bJh-nc-VGT"/>
+                                        <outlet property="wordLabel" destination="Dpz-ke-T6n" id="JD6-H7-OCH"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yan-K9-hgu" customClass="GameFieldView" customModule="BS_Bingo" customModuleProvider="target">
+                                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="133.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kzT-0c-fZf">
+                                            <rect key="frame" x="8" y="-11" width="77.5" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RES-TW-dhM">
+                                            <rect key="frame" x="8" y="9" width="117" height="117"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="9Bl-LT-YJ0">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uSt-VB-QVA">
+                                            <rect key="frame" x="8" y="20" width="78" height="106"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" name="main"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <viewLayoutGuide key="safeArea" id="r6f-tW-v4C"/>
+                                    <connections>
+                                        <outlet property="blidFieldView" destination="uSt-VB-QVA" id="aDz-nz-LYH"/>
+                                        <outlet property="tappedView" destination="RES-TW-dhM" id="240-Qb-qI9"/>
+                                        <outlet property="wordLabel" destination="kzT-0c-fZf" id="Z2T-Lc-aLm"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="5yt-7V-aUK"/>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ni2-cb-0je" secondAttribute="bottom" id="EPs-Ax-sUJ"/>
+                <constraint firstItem="ni2-cb-0je" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="p03-zB-xlj"/>
+                <constraint firstAttribute="trailing" secondItem="ni2-cb-0je" secondAttribute="trailing" id="vko-ce-nUF"/>
+                <constraint firstItem="ni2-cb-0je" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xgG-pz-P9b"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="fields" destination="JSL-ch-TvE" collectionClass="NSMutableArray" id="HZU-ra-gdG"/>
+                <outletCollection property="fields" destination="30p-Jz-xa0" collectionClass="NSMutableArray" id="a62-G7-boe"/>
+                <outletCollection property="fields" destination="gYr-9P-dZk" collectionClass="NSMutableArray" id="7k8-pC-WK6"/>
+                <outletCollection property="fields" destination="Hcq-lc-ntU" collectionClass="NSMutableArray" id="r83-lX-lBR"/>
+                <outletCollection property="fields" destination="G8v-Gh-ePy" collectionClass="NSMutableArray" id="36u-Ay-Mhe"/>
+                <outletCollection property="fields" destination="FTQ-o7-Ryu" collectionClass="NSMutableArray" id="a6x-1u-ntt"/>
+                <outletCollection property="fields" destination="unt-oU-bSv" collectionClass="NSMutableArray" id="n6C-Yh-HWj"/>
+                <outletCollection property="fields" destination="oTk-Lu-swl" collectionClass="NSMutableArray" id="DsI-hf-pUz"/>
+                <outletCollection property="fields" destination="BSr-0s-NSe" collectionClass="NSMutableArray" id="fmo-4z-0Z7"/>
+                <outletCollection property="fields" destination="bNU-es-dMM" collectionClass="NSMutableArray" id="tYd-1z-Ho6"/>
+                <outletCollection property="fields" destination="zet-Xm-cJk" collectionClass="NSMutableArray" id="Z3P-za-uSa"/>
+                <outletCollection property="fields" destination="SW2-lk-KKr" collectionClass="NSMutableArray" id="7kX-0u-iXx"/>
+                <outletCollection property="fields" destination="1q7-JU-Jta" collectionClass="NSMutableArray" id="rXr-aL-7RM"/>
+                <outletCollection property="fields" destination="fKG-9i-4iz" collectionClass="NSMutableArray" id="3g7-eM-i6X"/>
+                <outletCollection property="fields" destination="g3H-Mc-fGm" collectionClass="NSMutableArray" id="iKK-Qx-ABf"/>
+                <outletCollection property="fields" destination="Dng-iu-9JM" collectionClass="NSMutableArray" id="tTi-kh-m4F"/>
+                <outletCollection property="fields" destination="TQa-FB-HPe" collectionClass="NSMutableArray" id="SW6-K8-Guz"/>
+                <outletCollection property="fields" destination="fsU-lY-LF6" collectionClass="NSMutableArray" id="B1k-aw-8Hv"/>
+                <outletCollection property="fields" destination="WIZ-4U-UkB" collectionClass="NSMutableArray" id="dkW-oM-iSj"/>
+                <outletCollection property="fields" destination="Yan-K9-hgu" collectionClass="NSMutableArray" id="9H0-1Z-rjo"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="main">
+            <color red="0.98431372549019602" green="0.48627450980392156" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

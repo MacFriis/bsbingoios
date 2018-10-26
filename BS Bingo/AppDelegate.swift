@@ -17,6 +17,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UIView.appearance().tintColor = UIColor(named: "main")
+        UITabBar.appearance().tintColor = UIColor.white
+        
+        
+        Cloud.shared.getWords(persistentContainer: persistentContainer) { (success, object, error) -> (Void) in
+            if !success {
+                print(error ?? "no error", object ?? "no object")
+                return
+            }
+            Cloud.shared.getCategories(persistentContainer: self.persistentContainer) { (success, object, error) -> (Void) in
+                
+            }
+        }
+        
+        
         return true
     }
 

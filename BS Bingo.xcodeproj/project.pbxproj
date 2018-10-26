@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA4F8D74217F54EC00FE19D2 /* AuthDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F8D73217F54EC00FE19D2 /* AuthDTO.swift */; };
 		DA9637682179F80D007E91D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9637672179F80D007E91D1 /* AppDelegate.swift */; };
-		DA96376A2179F80D007E91D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9637692179F80D007E91D1 /* ViewController.swift */; };
 		DA96376D2179F80D007E91D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA96376B2179F80D007E91D1 /* Main.storyboard */; };
 		DA9637702179F80D007E91D1 /* BS_Bingo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA96376E2179F80D007E91D1 /* BS_Bingo.xcdatamodeld */; };
 		DA9637722179F80E007E91D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9637712179F80E007E91D1 /* Assets.xcassets */; };
 		DA9637752179F80E007E91D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9637732179F80E007E91D1 /* LaunchScreen.storyboard */; };
 		DA9637802179F80E007E91D1 /* BS_BingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96377F2179F80E007E91D1 /* BS_BingoTests.swift */; };
 		DA96378B2179F80E007E91D1 /* BS_BingoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96378A2179F80E007E91D1 /* BS_BingoUITests.swift */; };
+		DA96379B2179F936007E91D1 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96379A2179F936007E91D1 /* Cloud.swift */; };
+		DA96379E217A0066007E91D1 /* BSWordDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96379D217A0066007E91D1 /* BSWordDTO.swift */; };
+		DA9637A0217A078F007E91D1 /* BSWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96379F217A078F007E91D1 /* BSWord.swift */; };
+		DA9637A5217A1A9A007E91D1 /* GameBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA9637A4217A1A9A007E91D1 /* GameBoard.xib */; };
+		DA9637A7217A1BE1007E91D1 /* GameFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9637A6217A1BE1007E91D1 /* GameFieldView.swift */; };
+		DA9637A9217A1FA7007E91D1 /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9637A8217A1FA7007E91D1 /* GameBoardView.swift */; };
+		DA9637AB217A1FD5007E91D1 /* GameBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9637AA217A1FD5007E91D1 /* GameBoardViewController.swift */; };
+		DA9637AD217CE709007E91D1 /* GameBoardsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9637AC217CE709007E91D1 /* GameBoardsCollectionViewController.swift */; };
+		DA9637AF217DD5A8007E91D1 /* CategorieDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9637AE217DD5A8007E91D1 /* CategorieDTO.swift */; };
+		DA9637B1217DDECF007E91D1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9637B0217DDECF007E91D1 /* Category.swift */; };
+		DA9637B4217DEAB7007E91D1 /* BingoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9637B3217DEAB7007E91D1 /* BingoView.swift */; };
+		DAA91B8C21808302009BB159 /* BSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA91B8B21808302009BB159 /* BSTabBarController.swift */; };
+		DAC7FB97217DFD5900A856F1 /* BSWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC7FB96217DFD5900A856F1 /* BSWordViewController.swift */; };
+		DAC7FB99217E00E300A856F1 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC7FB98217E00E300A856F1 /* SettingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA4F8D73217F54EC00FE19D2 /* AuthDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDTO.swift; sourceTree = "<group>"; };
 		DA9637642179F80D007E91D1 /* BS Bingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BS Bingo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9637672179F80D007E91D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA9637692179F80D007E91D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA96376C2179F80D007E91D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA96376F2179F80D007E91D1 /* BS_Bingo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BS_Bingo.xcdatamodel; sourceTree = "<group>"; };
 		DA9637712179F80E007E91D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +63,20 @@
 		DA9637862179F80E007E91D1 /* BS BingoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BS BingoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA96378A2179F80E007E91D1 /* BS_BingoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BS_BingoUITests.swift; sourceTree = "<group>"; };
 		DA96378C2179F80E007E91D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA96379A2179F936007E91D1 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		DA96379D217A0066007E91D1 /* BSWordDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSWordDTO.swift; sourceTree = "<group>"; };
+		DA96379F217A078F007E91D1 /* BSWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSWord.swift; sourceTree = "<group>"; };
+		DA9637A4217A1A9A007E91D1 /* GameBoard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameBoard.xib; sourceTree = "<group>"; };
+		DA9637A6217A1BE1007E91D1 /* GameFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFieldView.swift; sourceTree = "<group>"; };
+		DA9637A8217A1FA7007E91D1 /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		DA9637AA217A1FD5007E91D1 /* GameBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardViewController.swift; sourceTree = "<group>"; };
+		DA9637AC217CE709007E91D1 /* GameBoardsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardsCollectionViewController.swift; sourceTree = "<group>"; };
+		DA9637AE217DD5A8007E91D1 /* CategorieDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieDTO.swift; sourceTree = "<group>"; };
+		DA9637B0217DDECF007E91D1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DA9637B3217DEAB7007E91D1 /* BingoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoView.swift; sourceTree = "<group>"; };
+		DAA91B8B21808302009BB159 /* BSTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTabBarController.swift; sourceTree = "<group>"; };
+		DAC7FB96217DFD5900A856F1 /* BSWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSWordViewController.swift; sourceTree = "<group>"; };
+		DAC7FB98217E00E300A856F1 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +127,13 @@
 		DA9637662179F80D007E91D1 /* BS Bingo */ = {
 			isa = PBXGroup;
 			children = (
+				DA9637A1217A0AA8007E91D1 /* UI */,
+				DA96379C217A0028007E91D1 /* Model */,
+				DA9637992179F928007E91D1 /* Cloud */,
 				DA9637672179F80D007E91D1 /* AppDelegate.swift */,
-				DA9637692179F80D007E91D1 /* ViewController.swift */,
-				DA96376B2179F80D007E91D1 /* Main.storyboard */,
 				DA9637712179F80E007E91D1 /* Assets.xcassets */,
 				DA9637732179F80E007E91D1 /* LaunchScreen.storyboard */,
 				DA9637762179F80E007E91D1 /* Info.plist */,
-				DA96376E2179F80D007E91D1 /* BS_Bingo.xcdatamodeld */,
 			);
 			path = "BS Bingo";
 			sourceTree = "<group>";
@@ -128,6 +156,52 @@
 			path = "BS BingoUITests";
 			sourceTree = "<group>";
 		};
+		DA9637992179F928007E91D1 /* Cloud */ = {
+			isa = PBXGroup;
+			children = (
+				DA96379A2179F936007E91D1 /* Cloud.swift */,
+			);
+			path = Cloud;
+			sourceTree = "<group>";
+		};
+		DA96379C217A0028007E91D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA96376E2179F80D007E91D1 /* BS_Bingo.xcdatamodeld */,
+				DA4F8D73217F54EC00FE19D2 /* AuthDTO.swift */,
+				DA96379D217A0066007E91D1 /* BSWordDTO.swift */,
+				DA9637AE217DD5A8007E91D1 /* CategorieDTO.swift */,
+				DA96379F217A078F007E91D1 /* BSWord.swift */,
+				DA9637B0217DDECF007E91D1 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA9637A1217A0AA8007E91D1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DA9637B2217DEA81007E91D1 /* Playing */,
+				DA96376B2179F80D007E91D1 /* Main.storyboard */,
+				DA9637AC217CE709007E91D1 /* GameBoardsCollectionViewController.swift */,
+				DAC7FB96217DFD5900A856F1 /* BSWordViewController.swift */,
+				DAC7FB98217E00E300A856F1 /* SettingTableViewController.swift */,
+				DAA91B8B21808302009BB159 /* BSTabBarController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DA9637B2217DEA81007E91D1 /* Playing */ = {
+			isa = PBXGroup;
+			children = (
+				DA9637A4217A1A9A007E91D1 /* GameBoard.xib */,
+				DA9637A6217A1BE1007E91D1 /* GameFieldView.swift */,
+				DA9637A8217A1FA7007E91D1 /* GameBoardView.swift */,
+				DA9637AA217A1FD5007E91D1 /* GameBoardViewController.swift */,
+				DA9637B3217DEAB7007E91D1 /* BingoView.swift */,
+			);
+			path = Playing;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA96378F2179F80E007E91D1 /* Build configuration list for PBXNativeTarget "BS Bingo" */;
 			buildPhases = (
+				DA9637982179F86A007E91D1 /* Increment Build number */,
 				DA9637602179F80D007E91D1 /* Sources */,
 				DA9637612179F80D007E91D1 /* Frameworks */,
 				DA9637622179F80D007E91D1 /* Resources */,
@@ -232,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9637A5217A1A9A007E91D1 /* GameBoard.xib in Resources */,
 				DA9637752179F80E007E91D1 /* LaunchScreen.storyboard in Resources */,
 				DA9637722179F80E007E91D1 /* Assets.xcassets in Resources */,
 				DA96376D2179F80D007E91D1 /* Main.storyboard in Resources */,
@@ -254,14 +330,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DA9637982179F86A007E91D1 /* Increment Build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbN=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbN=$(($bN))\nbN=$(($bN + 1))\nbN=$(printf \"%d\" $bN)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $bN\" \"$INFOPLIST_FILE\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA9637602179F80D007E91D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA96376A2179F80D007E91D1 /* ViewController.swift in Sources */,
+				DAC7FB99217E00E300A856F1 /* SettingTableViewController.swift in Sources */,
+				DA4F8D74217F54EC00FE19D2 /* AuthDTO.swift in Sources */,
+				DA9637A0217A078F007E91D1 /* BSWord.swift in Sources */,
+				DA9637AB217A1FD5007E91D1 /* GameBoardViewController.swift in Sources */,
+				DA96379B2179F936007E91D1 /* Cloud.swift in Sources */,
+				DA9637AF217DD5A8007E91D1 /* CategorieDTO.swift in Sources */,
 				DA9637702179F80D007E91D1 /* BS_Bingo.xcdatamodeld in Sources */,
+				DA9637A9217A1FA7007E91D1 /* GameBoardView.swift in Sources */,
+				DAA91B8C21808302009BB159 /* BSTabBarController.swift in Sources */,
+				DA9637A7217A1BE1007E91D1 /* GameFieldView.swift in Sources */,
+				DA96379E217A0066007E91D1 /* BSWordDTO.swift in Sources */,
+				DA9637B4217DEAB7007E91D1 /* BingoView.swift in Sources */,
 				DA9637682179F80D007E91D1 /* AppDelegate.swift in Sources */,
+				DA9637AD217CE709007E91D1 /* GameBoardsCollectionViewController.swift in Sources */,
+				DA9637B1217DDECF007E91D1 /* Category.swift in Sources */,
+				DAC7FB97217DFD5900A856F1 /* BSWordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,16 +547,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WFC2CXXQSY;
+				DEVELOPMENT_TEAM = AX3K8VES64;
 				INFOPLIST_FILE = "BS Bingo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dk.friisdata.BS-Bingo";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.friisdata.BSbingo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,16 +565,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WFC2CXXQSY;
+				DEVELOPMENT_TEAM = AX3K8VES64;
 				INFOPLIST_FILE = "BS Bingo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dk.friisdata.BS-Bingo";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.friisdata.BSbingo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
