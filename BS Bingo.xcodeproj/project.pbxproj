@@ -133,7 +133,6 @@
 				DA9637672179F80D007E91D1 /* AppDelegate.swift */,
 				DA9637712179F80E007E91D1 /* Assets.xcassets */,
 				DA9637732179F80E007E91D1 /* LaunchScreen.storyboard */,
-				DA9637762179F80E007E91D1 /* Info.plist */,
 			);
 			path = "BS Bingo";
 			sourceTree = "<group>";
@@ -172,6 +171,7 @@
 				DA96379D217A0066007E91D1 /* BSWordDTO.swift */,
 				DA9637AE217DD5A8007E91D1 /* CategorieDTO.swift */,
 				DA96379F217A078F007E91D1 /* BSWord.swift */,
+				DA9637762179F80E007E91D1 /* Info.plist */,
 				DA9637B0217DDECF007E91D1 /* Category.swift */,
 			);
 			path = Model;
